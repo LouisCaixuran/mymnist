@@ -8,7 +8,7 @@ from PIL import Image
 
 # 接下来打开图片，并且将像转化为8bit黑白像素
 def get_image():
-    path_to_image='testdata/0(2).jpg'
+    path_to_image='lalala.jpg'
     im = Image.open(path_to_image)
     im = im.convert('L')
 
@@ -69,3 +69,4 @@ x=get_image()
 y=predict(network,x)
 p=np.argmax(y)
 print(p)
+print(y)
