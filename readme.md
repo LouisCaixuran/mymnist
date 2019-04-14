@@ -1,13 +1,15 @@
 readme.md
 
-predict a integer image
-test data is stored in testdata directory
-dataset is the mnist standard train and test set
+Predict a integer image
+
+Test data is stored in testdata directory
+
+Dataset is the mnist standard train and test set
 
 
 
-### step1
-use train.py to train and store the two layer net model in two_layer_net.pkl
+### Step1
+Use train.py to train and store the two layer net model in two_layer_net.pkl
 	
 	$python3 train.py
 	train acc, test acc | 0.10441666666666667, 0.1028
@@ -28,8 +30,8 @@ use train.py to train and store the two layer net model in two_layer_net.pkl
 	train acc, test acc | 0.9457833333333333, 0.9445
 	train acc, test acc | 0.9484833333333333, 0.9477
 
-### step2
-use two_layer_test.py to test the accuracy of the model
+### Step2
+Use two_layer_test.py to test the accuracy of the model
 
 	$python3 two_layer_test.py
 	Accuracy:0.9466
