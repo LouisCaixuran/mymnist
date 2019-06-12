@@ -32,11 +32,11 @@ def get_data():
 
 
 def init_network():
-    with open("one_layer_weight.pkl", 'rb') as f:
+    with open("params.pkl", 'rb') as f:
         network = pickle.load(f)
     return network
 
-
+'''
 def predict(network, x):
     W1, W2, W3 = network['W1'], network['W2'], network['W3']
     b1, b2, b3 = network['b1'], network['b2'], network['b3']
@@ -49,7 +49,12 @@ def predict(network, x):
     y = softmax(a3)
 
     return y
+'''
+def predict(self, x):
+    for layer in self.layers.values():
+        x = layer.forward(x)
 
+    return x
 
 
 x, t = get_data()

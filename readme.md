@@ -6,7 +6,7 @@ Test data is stored in testdata directory
 
 Dataset is the mnist standard train and test set
 
-
+##Normal way
 
 ### Step1
 Use train.py to train and store the two layer net model in two_layer_net.pkl
@@ -36,3 +36,37 @@ Use two_layer_test.py to test the accuracy of the model
 	$python3 two_layer_test.py
 	Accuracy:0.9466
 
+with the get_image function you can also test your own image
+## CNN
+
+###Step1
+Use train_conv.py to train and store CNN net model in params.pkl
+
+	$python3 train_conv.py
+	train loss:2.300001846087919
+	=== epoch:1, train acc:0.212, test acc:0.191 ===
+	train loss:2.29748375539359
+	train loss:2.294312634680256
+	train loss:2.286364878660862
+	train loss:2.2797246011860945
+	train loss:2.2627870681081244
+	train loss:2.250901554926544
+	train loss:2.2377228652672003
+	train loss:2.1955270072011173
+	train loss:2.1901397325996363
+	train loss:2.161590794937312
+	train loss:2.0857797169219743
+	train loss:2.0658089204986436
+	train loss:2.0255680630766495
+	train loss:1.9911901577369833
+	...
+finally loss can come to less than 0.001
+
+###Step2
+Use test.py to test your own image in testdata
+	
+	$ python3 test.py
+	5
+	[[ -3669.03271876  -2723.0830266   -1336.10245562  -4087.55747946
+	-1673.66868792   1515.17049045    675.42958532 -11025.10787864
+	609.69700127 -10413.63506436]]
