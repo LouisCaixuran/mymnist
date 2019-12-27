@@ -7,7 +7,7 @@ from conv import SimpleConvNet
 
 
 def get_image():
-    path_to_image='testdata/1(2).jpg'
+    path_to_image='testdata/7.jpg'
     im = Image.open(path_to_image)
     im = im.convert('L')
 
