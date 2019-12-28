@@ -70,3 +70,14 @@ Use test.py to test your own image in testdata
 	[[ -3669.03271876  -2723.0830266   -1336.10245562  -4087.55747946
 	-1673.66868792   1515.17049045    675.42958532 -11025.10787864
 	609.69700127 -10413.63506436]]
+
+
+## pytorch
+### net
+Rewrite the two_layer net with pytorch.
+convert the definition of linear function and the predict function with the pytorch
+keep the accuracy function to show if it works
+in train_pytorch function,
+change the numpy array into tensorarray and use optimizer to do the loss and backwards
+
+
