@@ -17,11 +17,11 @@ train_acc_list = []
 test_acc_list = []
 
 iter_per_epoch = max(train_size / batch_size, 1)
+criterion = nn.MSELoss()
 
 optimizer = optim.SGD(model.parameters(), lr=0.01)
 
-model.train()
-
+#model.train()
 
 for i in range(iters_num):
     batch_mask = np.random.choice(train_size, batch_size)
@@ -31,7 +31,6 @@ for i in range(iters_num):
 
     optimizer.zero_grad()
     output = model(x_batch)
-    criterion = nn.MSELoss()
     loss = criterion(output,t_batch)
     loss.backward()
     optimizer.step()
